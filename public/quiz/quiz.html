@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="quiz.css">
+<script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-database.js"></script>
+
+</head>
+<body onload="nextQuestion()">
+    <div>
+        <h1 style="text-shadow: 0 0 7px rgba(73, 72, 72, 0.5);">Qiuz</h1>
+        <h3 id="time">2:00</h3>
+        <div class="quizContainer">
+            <p id="ques"></p>
+
+            <input onclick="target()" value="1" name="option" type="radio">
+            <label id="option1" for=""></label><br>
+
+
+            <input onclick="target()" value="2" name="option" type="radio">
+            <label id="option2" for=""></label><br>
+
+
+            <input onclick="target()" value="3" name="option" type="radio">
+            <label id="option3" for=""></label><br><br>
+
+
+             <button id="btn" disabled onclick="nextQuestion()">Next</button>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="quiz.js"></script>
+</body>
+</html>

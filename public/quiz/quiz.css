@@ -1,0 +1,60 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background: linear-gradient(to right, #ffefba, #ffffff);
+    /* overflow-x: hidden; */
+
+}
+h1{
+    font-family:"dancing script", cursive;
+    text-align: center;
+}
+.quizContainer{
+    border: none;
+    max-width: 450px;
+    max-height: 500px;
+    padding: 20px;
+    font-size: 20px;
+    box-shadow: 0 0 15px rgba(15, 0, 0, 0.5);;
+    margin: auto;
+}
+#btn{
+    border: none;
+    border-radius: 10px ;
+    padding: 10px;
+    background-color: #f6ce4c;
+    width: 50%;
+    box-shadow: 0 0 10px #fddd71;
+}
+#ques{
+    font-style: oblique;
+ }
+ label{
+   font-style: oblique;
+}#time{
+    text-align: center;
+    font-size: 30px ;
+}
+@media only screen and (max-width:500px) {
+    .quizContainer{
+        width: 400px;
+    }
+}
+@media only screen and (max-width:440px) {
+    .quizContainer{
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width:340px) {
+    .quizContainer{
+        width: 250px;
+    }
+}
+@media only screen and (max-width:300px) {
+    .quizContainer{
+        width: 200px;
+    }
+}
+
